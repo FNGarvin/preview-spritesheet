@@ -17,6 +17,14 @@ Expects a square image containing a **4×4 grid** of equal-sized frames — the 
 
 Common input sizes are **128×128** (32×32 px per frame) and **512×512** (128×128 px per frame). Any square image whose width is divisible by 4 is accepted.
 
+## Demo Test Case: YesRock
+
+You can test the repository's grid extraction and animation loop validation using the provided `yesrock` assets.  This case demonstrates how the tool handles AI-generated pixel sheets with high-contrast textures.
+
+| Source Sprite Sheet (`yesrock_sheet.png`) | Animated Loop Preview (`yesrock.gif`) |
+| :---: | :---: |
+| <img src="yesrock_sheet.png" width="400" alt="YesRock Pixel Sprite Sheet"> | <img src="yesrock.gif" width="200" alt="YesRock Walk Cycle Animation"> |
+
 ## Setup
 
 Requires [uv](https://docs.astral.sh/uv/).
