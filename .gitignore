@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Test / sample images and generated output
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.webp

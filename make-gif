@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Launcher — resolves the project venv regardless of where the script is called from.
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PYTHON="$DIR/.venv/bin/python3"
+if [[ ! -x "$PYTHON" ]]; then
+    echo "$(basename "$0"): error: venv not found — run 'uv sync' inside $DIR" >&2
+    exit 1
+fi
+exec "$PYTHON" "$DIR/make_gif.py" "$@"

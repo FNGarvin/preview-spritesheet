@@ -1,0 +1,9 @@
+[project]
+name = "preview-spritesheet"
+version = "0.1.0"
+description = "Generate an animated GIF from a pixel-art RPG spritesheet"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pillow>=12.2.0",
+]
